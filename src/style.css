@@ -1,0 +1,10 @@
+@import 'tailwindcss';
+
+/* 
+   In v4, you can configure your theme directly here using CSS variables 
+   instead of tailwind.config.js 
+*/
+@theme {
+  --color-brand: #ff5733;
+  --font-display: 'Satoshi', 'sans-serif';
+}
