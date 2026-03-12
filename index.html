@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Battleship</title>
+  <script defer src="bundle.js"></script></head>
+  <body>
+    <div
+      class="container min-h-screen bg-blue-950 relative flex items-center justify-center"
+    ></div>
+
+    <dialog class="rounded-2xl shadow-2xl p-2 bg-white">
+      <form class="flex gap-5">
+        <button
+          type="button"
+          class="toggle-direction p-4 bg-white hover:bg-gray-300 border-2 text-3xl font-bold"
+        ></button>
+        <label for="Carrier-head-x" class="headLabel-x">Carrier-head-x:</label>
+        <input
+          required
+          type="text"
+          id="Carrier-head-x"
+          name="Carrier-head-x"
+          class="headInput-x p-2 border-2 border-black"
+        />
+        <label for="Carrier-head-y" class="headLabel-y">Carrier-head-y:</label>
+        <input
+          required
+          type="text"
+          id="Carrier-head-y"
+          name="Carrier-head-y"
+          class="headInput-y p-2 border-2 border-black"
+        />
+        <button type="submit" class="submitBtn">Submit</button>
+      </form>
+    </dialog>
+  </body>
+</html>
