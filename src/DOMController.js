@@ -1,6 +1,6 @@
 let prevSubmitListener = null;
 export function placeShipGrid() {
-  const container = document.querySelector('.container');
+  const container = document.querySelector('.containerDiv');
   container.replaceChildren();
   const gridDiv = document.createElement('div');
   gridDiv.className =
@@ -91,7 +91,7 @@ export function updatePlaceHumanShip(prehead, predirection, length) {
   }
 }
 export function gameOnDOM(humanTurn, humanVisited) {
-  const container = document.querySelector('.container');
+  const container = document.querySelector('.containerDiv');
   container.replaceChildren();
   const humanDiv = document.createElement('div');
   const computerDiv = document.createElement('div');
@@ -159,7 +159,7 @@ export function updateHoles(ifHit, position, playerName) {
   targetCell.appendChild(dot);
 }
 export function GameOverDOM(winner, gameReset) {
-  const container = document.querySelector('.container');
+  const container = document.querySelector('.containerDiv');
   container.replaceChildren();
   const banner = document.createElement('p');
   banner.className = 'p-6 bg-red-600 m-auto text-[50px] font-bold text-white';
